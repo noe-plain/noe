@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../style/style.css">
+
+    <meta name="robots" content="index,follow">
+    <meta http-equiv="expires" content="60">
+
+    <meta name="author" content="Noé Plain">
+    <meta name="copyright" content="Noé Plain">
+
+    <meta name="description" content="WebPortfolio mit den illustrationen von Piclain.">
+    <meta name="keywords" content="Noé Plain, Fotografie, Illustration">
+    <link rel="icon" type="image/x-icon" href="./pictures/njp_logo_gross.png">
+    <title>Piclain – Illustration</title>
+</head>
+
+<body>
+    <header>
+        <div class="maxwidth display-flex margineo">
+            <a href="../index.html"><img class="header_logo" src="../pictures/njp_logo.svg"
+                    alt="Logo von Piclain/NJP"></a>
+            <nav>
+                <ul>
+                    <a href="./fotografie.html">
+                        <li>
+                            Fotografie
+                        </li>
+                    </a>
+                    <a class="activ" href="../index.html">
+                        <li>
+                            Illustration
+                        </li>
+                    </a>
+                    <a href="./kontakt.php">
+                        <li>
+                            Kontakt
+                        </li>
+                    </a>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <!-- Slideshow container -->
+        <div class="dviolet paddingb">
+            <div class="slideshow-container">
+
+                <!-- Full-width images with number and caption text -->
+                <div class="mySlides fade">
+                    <div class="numbertext">1 / 5</div>
+                    <a href="../pictures/illustration_colorfull.jpg" target="_blank"><img
+                            src="../pictures/illustration_colorfull_small.jpg" alt="Abstrakte kusnst mit einem Kreis"
+                            style="width:100%"></a>
+                </div>
+
+                <div class="mySlides fade">
+                    <div class="numbertext">2 / 5</div>
+                    <a href="../pictures/wjso-brass.pdf" target="_blank"><img src="../pictures/wjso-brass_small.jpg"
+                            alt="WJSO Brass Plackat –> vereinfacht" style="width:100%"></a>
+                </div>
+
+                <div class="mySlides fade">
+                    <div class="numbertext">3 / 5</div>
+                    <a href="../pictures/pizza-point.svg" target="_blank"><img src="../pictures/pizza-point_small.jpg"
+                            alt="Pizza Point Logo – Halb Pizza und halb Punkt" style="width:100%"></a>
+                </div>
+
+                <div class="mySlides fade">
+                    <div class="numbertext">4 / 5</div>
+                    <a href="../pictures/air.svg" target="_blank"><img src="../pictures/air_small.jpg"
+                            alt="3d Illustration eines Air Schriftzuges" style="width:100%"></a>
+                </div>
+
+                <div class="mySlides fade">
+                    <div class="numbertext">5 / 5</div>
+                    <a href="../pictures/opw_plackat.pdf" target="_blank"><img src="../pictures/opw_logo.jpg"
+                            alt="Open Air Waid Logo in Farbe" style="width:100%"></a>
+                </div>
+
+                <!-- Next and previous buttons 
+                        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                        <a class="next" onclick="plusSlides(1)">&#10095;</a>-->
+            </div>
+
+            <br>
+
+            <!-- The dots/circles -->
+            <div style="text-align:center">
+                <span class="dot" onclick="currentSlide(1)"></span>
+                <span class="dot" onclick="currentSlide(2)"></span>
+                <span class="dot" onclick="currentSlide(3)"></span>
+                <span class="dot" onclick="currentSlide(4)"></span>
+                <span class="dot" onclick="currentSlide(5)"></span>
+            </div>
+        </div>
+        <div class="lpink display-flexdirection paddingtopbottom">
+            <div>
+                <h1>Illustration</h1>
+                <p class="architktur_text">
+                    Das Illustrieren ist eine Art des Gestaltens, die mir auch sehr
+                    gefällt. Es ist eine spannende Art von Kunst, da viel spannendes
+                    gemacht werden kann. Ganz besonders interessant finde ich,
+                    dass alles von Grund auf gestaltet wird. Dabei ist es immer entspannend die den ganzen Prozess zu
+                    erleben.
+                </p>
+            </div>
+        </div>
+
+        <div class="bildergalerie-center">
+            <div class="bildergallerie nobottom">
+                <a href="../pictures/modern.svg" target="_blank"><img src="../pictures/modern_small.jpg"
+                        alt="Illustration eines iPhone"></a>
+                <a href="../pictures/abstrakt_gelb.svg" target="_blank"><img src="../pictures/abstrakt_gelb_small.jpg"
+                        alt="Illustration eines modernen Bildes mit Kreisen"></a>
+                <a href="../pictures/leicht.svg" target="_blank"><img src="../pictures/leicht_small.jpg"
+                        alt="Illustration einer Feder in einem Raum"></a>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <p class="marginbnon">WebPortfolio – Noé Plain</p>
+    </footer>
+
+    <script>
+        function openNav() {
+            document.getElementById("hamburgerNav").style.width = "100%";
+        }
+        function closeNav() {
+            document.getElementById("hamburgerNav").style.width = "0%";
+        }
+
+
+        let slideIndex = 0;
+        showSlides();
+
+        function showSlides() {
+            let i;
+            let slides = document.getElementsByClassName("mySlides");
+            let dots = document.getElementsByClassName("dot");
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+            slideIndex++;
+            if (slideIndex > slides.length) { slideIndex = 1 }
+            for (i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" active", "");
+            }
+            slides[slideIndex - 1].style.display = "block";
+            dots[slideIndex - 1].className += " active";
+            setTimeout(showSlides, 5000); // Change image every 2 seconds
+        }
+    </script>
+
+</html>

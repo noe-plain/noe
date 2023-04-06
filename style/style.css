@@ -1,0 +1,476 @@
+/****************** Allgemein ******************/
+
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+    cursor: pointer;
+    color: #1f0033;
+}
+
+::selection {
+    background: #1f0033;
+    color: #ae74ff;
+}
+
+::-moz-selection {
+    background: #1F0033;
+    color: #ae74ff;
+}
+
+.display-flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.display-flex-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.display-flexdirection {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.noalign {
+    align-items: flex-start;
+}
+
+.justifycenter {
+    justify-content: center !important;
+}
+
+.maxwidth {
+    margin: 0 30px !important;
+    width: 100%;
+    max-width: 1000px;
+}
+
+.activ {
+    border-radius: 20px;
+    background-color: #E4D1FF;
+    color: #1F0033;
+}
+
+.margineo {
+    margin: 0 30px;
+}
+
+.lpink {
+    background-color: #1F0033;
+}
+
+.dviolet {
+    background-color: #1F0033;
+}
+
+.button {
+    border-radius: 15px;
+    font-size: 12px;
+    color: #E4D1FF;
+    background-color: #1F0033;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    width: 120px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.button:hover {
+    cursor: grab;
+}
+
+.button:active {
+    cursor: grabbing;
+}
+
+.paddingt {
+    padding-top: 30px;
+}
+
+.paddingb {
+    padding-bottom: 30px;
+}
+
+.margint {
+    margin-top: 30px;
+}
+
+.marginb {
+    margin-bottom: 30px;
+}
+
+.marginbnon {
+    margin-bottom: 0px;
+}
+
+.height-header {
+    height: calc(100vh - 80px);
+}
+
+.cover {
+    object-fit: cover;
+}
+
+.paddingtopbottom {
+    padding: 100px 0;
+}
+
+
+
+/****************** Header ******************/
+
+.header_logo {
+    margin: 0 0 0 0;
+    height: 40px;
+    width: auto;
+    transition: 0.1s;
+}
+
+.header_logo:hover {
+    transition: 0.1s;
+    filter: brightness(1.2);
+
+}
+
+header {
+    background-color: #1F0033;
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Nav */
+
+ul {
+    border: #E4D1FF 2px solid;
+    border-radius: 40px;
+    margin: 0 0 0 0;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 0 0 0;
+}
+
+li {
+    width: 120px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+a:hover {
+    font-weight: 700;
+    cursor: grab !important;
+}
+
+li:hover,
+a:hover {
+    cursor: grab !important;
+}
+
+li:active {
+    cursor: grabbing;
+}
+
+a {
+    text-decoration: none;
+    color: #E4D1FF;
+}
+
+/****************** Bilder ******************/
+
+.imglink {
+    max-width: calc(500px - 15px);
+    width: 100%;
+    height: calc(100vh - 110px);
+    object-fit: cover;
+    border-radius: 15px;
+    position: relative;
+    transition: 0.3s;
+}
+
+.imglink:hover,
+.imglink:active {
+    cursor: grab;
+    box-shadow: 0 0 5px #E4D1FF;
+    transition: 0.3s;
+}
+
+.absolut {
+    position: absolute;
+    margin: 15px;
+    padding: 15px;
+    border-radius: 10px;
+    backdrop-filter: blur(2px) brightness(120%);
+    -webkit-backdrop-filter: blur(2px) brightness(120%);
+    -moz-backdrop-filter: blur(2px) brightness(120%);
+    background-color: #e4d1ffcc;
+    color: #1F0033;
+    z-index: 2;
+}
+
+.imgfullwidth {
+    max-width: 1000px;
+    width: calc(100vw - 60px);
+    height: 450px;
+    object-fit: cover;
+    border-radius: 20px;
+    margin: 0 0 30px 0;
+}
+
+.placeholder {
+    height: 50vw;
+    width: 30px;
+}
+
+.bildergalerie-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #1F0033;
+}
+
+.bildergallerie {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1000px;
+    width: auto;
+    margin: 0 30px;
+    padding: 30px 0;
+}
+
+.nobottom {
+    padding: 30px 0 0 0;
+}
+
+.bildergallerie a {
+    width: calc(33% - 15px);
+    object-fit: cover;
+}
+
+.bildergallerie img {
+    border-radius: 15px;
+    object-fit: cover;
+    min-height: 450px;
+    height: auto;
+    width: 100%;
+
+}
+
+/****************** Main ******************/
+
+.mainmitte {
+    min-height: calc(100vh - 160px);
+    padding: 0 30px;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+
+strong {
+    font-size: 18px;
+}
+
+p {
+    margin: 0 0 16px 0;
+    color: #ae74ff;
+}
+
+.architktur_text {
+    max-width: 1000px;
+    margin: 0 30px 0 30px;
+}
+
+.marginbsmal {
+    margin: 0 0 16px 0;
+}
+
+h1 {
+    color: #ae74ff;
+    margin: 0 0 20px 0;
+    text-align: center;
+}
+
+.violethead {
+    color: #E4D1FF;
+}
+
+form {
+    color: #1F0033;
+    flex-direction: column;
+    width: 100%;
+    padding: 30px 0;
+}
+
+input {
+    margin-bottom: 30px;
+    color: #1F0033;
+    padding-left: 10px;
+    border-radius: 15px;
+    border: 2px #1F0033 solid;
+    height: 40px;
+    width: calc(100% - 14px);
+    background-color: #E4D1FF;
+    font-size: 16px;
+}
+
+textarea {
+    resize: none;
+    font-size: 16px;
+    color: #1F0033;
+    padding-left: 10px;
+    padding-top: 7px;
+    border-radius: 15px;
+    border: 2px #1F0033 solid;
+    width: calc(100% - 14px);
+    background-color: #E4D1FF;
+    margin-bottom: 30px;
+}
+
+input:focus,
+textarea:focus {
+    border: #1F0033 2px solid;
+}
+
+input:placeholder-shown {
+    border: 2px solid #1F0033;
+}
+
+::placeholder {
+    color: #1F0033;
+}
+
+/* Slider */
+
+/* Slideshow container */
+.slideshow-container {
+    background-color: #1F0033;
+    padding: 30px;
+    position: relative;
+    max-width: 1000px;
+    margin: auto;
+}
+
+.mySlides {
+    width: 100%;
+}
+
+.mySlides img {
+    border-radius: 15px;
+    object-fit: cover;
+    min-height: 500px;
+    height: calc(100vh - 200px);
+}
+
+/* Position the "next button" to the right*/
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+/* Caption text */
+.text {
+    color: #fff;
+    font-size: 15px;
+    padding: 8px 12px;
+    position: absolute;
+    bottom: 8px;
+    width: 100%;
+    text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+    color: #fff;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 33px;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #E4D1FF;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 1s ease;
+}
+
+.displaynon {
+    display: none;
+}
+
+.active {
+    background-color: #ae74ff;
+}
+
+/* Fading animation */
+.fade {
+    animation-name: fade;
+    animation-duration: 2s;
+}
+
+@keyframes fade {
+    from {
+        opacity: .4
+    }
+
+    to {
+        opacity: 1
+    }
+}
+
+/****************** Footer ******************/
+
+footer {
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #E4D1FF;
+    background-color: #1F0033;
+}
+
+@media screen and (max-width: 465px) {
+
+
+    nav a {
+        font-size: 14px;
+    }
+
+    li {
+        width: 90px;
+    }
+}
+
+@media screen and (max-width: 380px) {
+
+    nav a {
+        font-size: 12px;
+    }
+
+    li {
+        width: 80px;
+    }
+}
